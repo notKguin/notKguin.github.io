@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h2,h3 {
+    padding: 0;
+    margin: 0 -550px 20px 20px;
+}
+
+p {
+    margin: 0 0 0 20px;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav {
+    top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 30px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__link:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    display: block;
+
+    background-color: #16c2a3;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity 0.25s linear;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+.profile {
+    background-color: rgba(96, 96, 96, 0.4);
+    color: #fff;
+    justify-content: space-between;
+    margin-top: 300px;
+    margin-left: 300px;
+    margin-right: 880px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.profile__logo {
+    margin-left: 70px;
+}
+
+.login {
+    width: 380px;
+    height: 270px;
+    margin-left: 1180px;
+    margin-top: 300px;
+}
